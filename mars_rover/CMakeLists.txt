@@ -13,7 +13,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(rclpy REQUIRED)
-find_package(simulation REQUIRED)
+# find_package(simulation REQUIRED)
 find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -41,12 +41,12 @@ install(DIRECTORY
 ament_python_install_package(${PROJECT_NAME})
 
 install(PROGRAMS
-  nodes/move_arm
-  nodes/move_mast
-  nodes/move_wheel
+  #nodes/move_arm
+  #nodes/move_mast
+  #nodes/move_wheel
   #nodes/run_demo
   nodes/teleop_rover
-  nodes/odom_tf_publisher
+  #nodes/odom_tf_publisher
   DESTINATION lib/${PROJECT_NAME}
 )
 
